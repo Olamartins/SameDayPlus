@@ -1,0 +1,107 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>SameDay Plus</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Inter:wght@400;500;600&display=swap">
+<style>
+/* Layout: sticky top nav, one narrow reading column per page, a single price panel and one repeated call to action. */
+:root{--bg:#F6F8F7;--surface:#FFFFFF;--fg:#14211F;--muted:#4C5E5A;--line:#D3DDDA;--accent:#0B6B5D;--accent-fg:#FFFFFF;--warn:#FFF1D6;--warn-fg:#5B3A00;--display:'Fraunces',Georgia,serif;--body:'Inter',system-ui,sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0F1A18;--surface:#17252A;--fg:#E8F0EE;--muted:#9DB2AD;--line:#2A3E3B;--accent:#4FC3AE;--accent-fg:#06211C;--warn:#3A2E12;--warn-fg:#F5D78F;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0F1A18;--surface:#17252A;--fg:#E8F0EE;--muted:#9DB2AD;--line:#2A3E3B;--accent:#4FC3AE;--accent-fg:#06211C;--warn:#3A2E12;--warn-fg:#F5D78F;color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font:16px/1.6 var(--body);padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0}
+.wrap{max-width:880px;margin:0 auto}
+.banner{background:var(--warn);color:var(--warn-fg);font-size:13px;padding:8px 12px;margin:0 -16px;text-align:center}
+nav{display:flex;flex-wrap:wrap;gap:4px 20px;align-items:center;justify-content:space-between;padding:16px 0;border-bottom:1px solid var(--line)}
+.brand{font:600 22px var(--display)}
+.links{display:flex;gap:4px;flex-wrap:wrap}
+.links a{color:var(--muted);text-decoration:none;padding:6px 12px;border-radius:6px;font-weight:500}
+.links a[aria-current="page"]{color:var(--accent);background:var(--surface);box-shadow:inset 0 -2px 0 var(--accent)}
+.links a:focus-visible,.cta:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+h1{font:600 clamp(32px,6vw,52px)/1.1 var(--display);margin:40px 0 16px;text-wrap:balance;max-width:20ch}
+h2{font:600 26px/1.2 var(--display);margin:0 0 10px;text-wrap:balance}
+p{max-width:65ch;margin:0 0 14px}
+.lead{font-size:19px;color:var(--muted)}
+section{padding:28px 0;border-top:1px solid var(--line)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:24px}
+.grid>div{min-width:0}
+h3{font:600 17px var(--body);margin:0 0 6px}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:24px;min-width:0}
+.price{font:600 44px/1 var(--display);color:var(--accent)}
+.price small{font:500 16px var(--body);color:var(--muted)}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;min-width:420px;font-variant-numeric:tabular-nums}
+th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line)}
+th{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.cta{display:inline-block;background:var(--accent);color:var(--accent-fg);font:600 16px var(--body);padding:13px 22px;border:0;border-radius:8px;cursor:pointer}
+.note{display:none;margin-top:12px;padding:12px 14px;background:var(--warn);color:var(--warn-fg);border-radius:8px;max-width:65ch;font-size:14px}
+.note.on{display:block}
+ul{padding-left:20px;max-width:65ch}
+li{margin-bottom:6px}
+footer{border-top:1px solid var(--line);padding:24px 0 40px;font-size:13px;color:var(--muted)}
+.page{display:none}.page.on{display:block}
+</style>
+<div class="banner">Academic concept for an MBA capstone. Not published by, or affiliated with, Guaranty Trust Bank.</div>
+<div class="wrap">
+<nav><span class="brand">SameDay Plus</span>
+<div class="links" id="links"><a href="#home">Home</a><a href="#offering">Offering</a><a href="#pricing">Pricing</a><a href="#trust">Trust</a></div></nav>
+
+<main>
+<div class="page" id="home">
+<h1>Credit and answers the same day, for customers who already bank with you.</h1>
+<p class="lead">SameDay Plus is a proposed membership inside a banking app. It looks at six months of your own account activity, offers a limit in minutes, and puts a person behind every answer from the assistant.</p>
+<p><button class="cta" data-cta>Ask for an invitation in GTWorld</button></p><div class="note" data-note>This is a classroom concept. No invitations are issued and no information is collected on this page.</div>
+<section><div class="grid">
+<div><h3>Decision in under 5 minutes</h3><p>Your limit comes from the money that moves through your account, so a payslip from one employer is not the only proof.</p></div>
+<div><h3>One price, shown first</h3><p>You see the full cost of a loan before you accept it. No fee appears later.</p></div>
+<div><h3>A person if the assistant cannot help</h3><p>If the assistant cannot resolve your case, a team member calls back within 2 hours.</p></div></div></section>
+<section><h2>Who it is for</h2><p>Adults in Nigeria with steady income paid into their account for at least six months, who open the app each week and need a small short-term loan, roughly ₦50,000 to ₦500,000.</p><p>It is not designed for cash-only customers, businesses, or people without verifiable income.</p></section>
+</div>
+
+<div class="page" id="offering">
+<h1>What you get as a member</h1>
+<p class="lead">Two things change: how fast you get an answer, and how credit is decided.</p>
+<section><div class="grid">
+<div class="panel"><h2>Assistant first, person guaranteed</h2><p>The assistant answers routine questions at any hour using approved bank wording. When it cannot resolve a case, it hands over with your details so you do not repeat yourself.</p></div>
+<div class="panel"><h2>Credit from your cash flow</h2><p>With your consent, the bank reviews six months of inflows to set a limit. Repay automatically or manually, with reminders before each due date.</p></div></div></section>
+<section><h2>A person decides what matters most</h2><ul><li>Appeals after a declined application, reviewed within 1 working day on request.</li><li>Complaints about lost money or suspected fraud.</li><li>Repayment difficulty and hardship plans.</li></ul></section>
+<section><p><button class="cta" data-cta>Ask for an invitation in GTWorld</button></p><div class="note" data-note>This is a classroom concept. No invitations are issued and no information is collected on this page.</div></section>
+</div>
+
+<div class="page" id="pricing">
+<h1>Two prices, both visible before you start</h1>
+<section><div class="grid">
+<div class="panel"><h3>Standard</h3><div class="price">₦0</div><p>Your normal account and the assistant. Credit is not included.</p></div>
+<div class="panel"><h3>Plus</h3><div class="price">₦1,000 <small>a month</small></div><p>Priority callbacks, appeals review, and access to cash-flow credit.</p></div></div></section>
+<section><h2>Credit price</h2><p>Interest is 2.95% a month on the amount you borrow. The total is shown to you before you accept.</p>
+<div class="tbl"><table><thead><tr><th>Example</th><th>Borrow</th><th>Interest, 1 month</th><th>Plus fee</th><th>Total cost</th></tr></thead><tbody>
+<tr><td>Small</td><td>₦50,000</td><td>₦1,475</td><td>₦1,000</td><td>₦2,475</td></tr>
+<tr><td>Medium</td><td>₦180,000</td><td>₦5,310</td><td>₦1,000</td><td>₦6,310</td></tr>
+<tr><td>Larger</td><td>₦500,000</td><td>₦14,750</td><td>₦1,000</td><td>₦15,750</td></tr></tbody></table></div>
+<p style="margin-top:12px;font-size:14px;color:var(--muted)">Illustrative amounts for one month. Insurance or other charges, if any, would be listed in the offer.</p></section>
+<section><p><button class="cta" data-cta>Ask for an invitation in GTWorld</button></p><div class="note" data-note>This is a classroom concept. No invitations are issued and no information is collected on this page.</div></section>
+</div>
+
+<div class="page" id="trust">
+<h1>How your data and your decisions are handled</h1>
+<section><div class="grid">
+<div><h3>Consent first</h3><p>The cash-flow review happens only after you agree, and follows the Nigeria Data Protection Act 2023.</p></div>
+<div><h3>Limits on automation</h3><p>The assistant does not decide appeals, complaints or collections. People do.</p></div>
+<div><h3>Fair outcomes</h3><p>Approval rates are checked each quarter by income type, and the model is validated every year.</p></div></div></section>
+<section><h2>What this page is</h2><p>SameDay Plus is a proposal prepared for a university business course. Prices, service times and eligibility are modelled targets that would be tested with customer interviews and a pilot before any launch. This page collects no data.</p>
+<p><button class="cta" data-cta>Ask for an invitation in GTWorld</button></p><div class="note" data-note>This is a classroom concept. No invitations are issued and no information is collected on this page.</div></section>
+</div>
+</main>
+<footer>Concept page for academic use. Competitor and bank names used elsewhere in the project are cited in the research appendix.</footer>
+</div>
+<script>
+(function(){
+var ids=['home','offering','pricing','trust'];
+function show(){var h=(location.hash||'#home').slice(1);if(ids.indexOf(h)<0)h='home';
+ids.forEach(function(i){document.getElementById(i).classList.toggle('on',i===h)});
+document.querySelectorAll('#links a').forEach(function(a){if(a.getAttribute('href')==='#'+h)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current')});}
+window.addEventListener('hashchange',show);show();
+document.querySelectorAll('[data-cta]').forEach(function(b){b.addEventListener('click',function(){var n=b.parentElement.nextElementSibling;if(n&&n.hasAttribute('data-note'))n.classList.toggle('on')})});
+})();
+</script>
+
+</body></html>
